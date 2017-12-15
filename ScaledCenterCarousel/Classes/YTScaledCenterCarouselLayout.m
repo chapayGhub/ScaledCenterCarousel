@@ -49,6 +49,7 @@ typedef BOOL (^YTArrayFilteringBlock)(id object);
         }];
 
         [self updateLayoutForBounds:self.collectionView.bounds];
+        self.currentVisibleRect = self.collectionView.bounds;
     }
     else {
         [self updateLayoutForBounds:self.currentVisibleRect];
